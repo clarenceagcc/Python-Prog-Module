@@ -13,13 +13,13 @@ def bmi_calc_main():
                 else:
                     bmi = bmi_calculator(height, weight, False)
                 bmi_cat = bmi_table(bmi)
-                print(f"{bmi:.2f}, {bmi_cat}")
+                print(f"{bmi:.2f}\t{bmi_cat}")
             else:
-                print("invalid metric type")
+                print("Your input is invalid!")
         else:
-            print("invalid input")
+            print("Your input is invalid!")
     except ValueError:
-        print("wrong inputs")
+        print("Your input is invalid!")
 
 
 def bmi_calculator(height, weight, ismetric):
@@ -50,3 +50,6 @@ def bmi_table(bmi):
     return bmi_cat
 
 bmi_calc_main()
+
+
+

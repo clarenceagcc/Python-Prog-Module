@@ -13,9 +13,9 @@ def weekly_calculator_main():
             else:
                 calculator(workinghrs, normrate, overrate, False)
         else:
-            print('invalid input!')
+            print("Your input is invalid!")
     else:
-        print("invalid input!")
+        print("Your input is invalid!")
 
 
 def calculator(workhrs, normrate, overrate, if_overtime):
@@ -27,7 +27,7 @@ def calculator(workhrs, normrate, overrate, if_overtime):
         print(f"Normal Salary:{normsal:.2f}, Extra Salary:{extrasal:.2f}, Total Salary:{total:.2f}")
     else:
         normsal = int(workhrs) * int(normrate)
-        print(f"Normal Salary:{normsal:.2f}, Extra Salary:0.0, Total Salary:{normsal:2f}")
+        print(f"Normal Salary:{normsal:.2f}, Extra Salary:0.00, Total Salary:{normsal:.2f}")
 
 
 weekly_calculator_main()

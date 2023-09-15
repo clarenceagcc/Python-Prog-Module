@@ -7,9 +7,9 @@ def ave_calculator():
             avg = ((float(n[0]) + float(n[1]) + float(n[2])) / 3)
             print(f"average : {avg:.2f}")
         else:
-            print("invalid input, input 3 numbers")
+            print("Your input is invalid!")
     except ValueError:
-        print("invalid input, only use numbers")
+        print("Your input is invalid!")
 
 
 def ave_calculatorv2():
@@ -20,11 +20,11 @@ def ave_calculatorv2():
         c = sys.argv[3]
         if a.isdigit() and b.isdigit() and c.isdigit():
             avg = ((float(a) + float(b) + float(c)) / 3)
-            print(f"average : {avg:.2f}")
+            print(f"Average:{avg:.2f}")
         else:
-            print('invalid input, input 3 numbers')
+            print("Your input is invalid!")
     else:
-        print("invalid input, input 3 numbers")
+        print("Your input is invalid!")
 
 
 ave_calculatorv2()

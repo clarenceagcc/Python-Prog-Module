@@ -1,4 +1,5 @@
 import sys
+import math
 
 def calc_main():
     no = sys.argv[1] # numbers
@@ -29,6 +30,6 @@ def calc_(evenNos, oddNos, noList):
             f'the difference between the biggest and smallest number is {difference}, ' 
             f'the total number of even numbers is {len(evenNos)}, '
             f'the total number of odd numbers is {len(oddNos)}, '
-            f'the centered average is {round(centered_avg)}. ')
+            f'the centered average is {int(centered_avg)}. ')
 
 calc_main()
