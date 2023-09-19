@@ -16,5 +16,9 @@ def leap_year_main():
     except:
         print("Your input is invalid!")
 
-
-leap_year_main()
+def test_():
+    li = [-1,-1,-1,-1,'dwdqwdqwdqwdqwdqwdwqdqwdqwd']
+    print(li)
+    li = ([x for x in li if x != -1])
+    print(li)
+test_()
