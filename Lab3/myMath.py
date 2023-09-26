@@ -23,6 +23,9 @@ def sumTotal(x):
     return sum(x)
 
 def clear(x):
-    for i in range(len(x)):
-        x[i] = 0
+    if min(x) < 5:
+        for i in range(len(x)):
+            x[i] = 0
+    else: 
+        pass
     return x
