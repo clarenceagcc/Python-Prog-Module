@@ -6,7 +6,7 @@ def qn1():
     List1 = ['abc', 'bcd', ['123', 567], 789]
     print(List1[1])     #bcd
     print(List1[2])     #'123', 567
-    #print(List1[2][2]) # out of range
+    print(List1[2][1]) # out of range
     #print(List1[4])    # out of range
     print(List1[-3])    #bcd
     print(List1[2:])    #['123', 567], 789
@@ -35,6 +35,8 @@ def qn1():
     print(num_list)         # 0, 10, 20, 30 .....
     obj = ['Even' if i % 2 == 0 else 'Odd' for i in range(10)]
     print(obj)              # 'Even', 'Odd', 'Even', 'Odd' .....
+
+qn1()
 
 
 def tuples_and_lists():
