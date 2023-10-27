@@ -58,10 +58,16 @@ void charAndStrExpressions()
 void charAndStrs() 
 {
     char buffer[255];
+    char *token;
 
     printf("Enter a sentence, up to 255 characters\n");
     fgets(buffer, 255, stdin);
 
-    
+    token = strtok(buffer, " ");
+    while (token != NULL)
+    {
+        printf("\n%s %d", token, strlen(token));
+        token = strtok(NULL, " ");
+    }
 
 }
