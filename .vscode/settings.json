@@ -1,6 +1,8 @@
 {
     "cmake.configureOnOpen": false,
     "files.associations": {
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "chrono": "c",
+        "functional": "c"
     }
 }
